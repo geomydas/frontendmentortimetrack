@@ -281,11 +281,15 @@ main {
     color: white !important;
   }
 }
-@media (max-width: 1120px) {
+@media (max-width: 70em) {
   main {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    align-items: center;
   }
- 
-    
+  section {
+    max-width: 10000px !important;
+    width: 100%;
+  }
 }

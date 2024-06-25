@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Time tracking dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.bunny.net" />
+    <link
+      href="https://fonts.bunny.net/css?family=rubik:300,400,500"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <section class="report">
+        <div>
+          <img src="images/image-jeremy.png" alt="image-jeremy avatar" />
+
+          <h1>Report for <b>Jeremy Robson</b></h1>
+        </div>
+        <div>
+          <button onclick="dailytoggle()">Daily</button>
+          <button onclick="weeklytoggle()">Weekly</button>
+          <button onclick="monthlytoggle()">Monthly</button>
+        </div>
+      </section>
+      <section class="work">
+        <div class="work-bg"></div>
+        <div>
+          <h1>Work</h1>
+          <img src="images/icon-ellipsis.svg" alt="icon-ellipsis" />
+        </div>
+        <h2 class="daily-h2">5hrs</h2>
+        <h3 class="daily-h3">Last Week- 3 hrs</h3>
+        <h2 class="weekly-h2">32hrs</h2>
+        <h3 class="weekly-h3">Last Week- 36hrs</h3>
+        <h2 class="monthly-h2">103hrs</h2>
+        <h3 class="monthly-h3">Last Week- 128hrs</h3>
+      </section>
+      <section class="play">
+        <div class="play-bg"></div>
+        <div>
+          <h1>Play</h1>
+          <img src="images/icon-ellipsis.svg" alt="icon-ellipsis" />
+        </div>
+        <h2 class="daily-h2">1hr</h2>
+        <h3 class="daily-h3">Last Week- 2hrs</h3>
+        <h2 class="weekly-h2">10hrs</h2>
+        <h3 class="weekly-h3">Last Week- 8hrs</h3>
+        <h2 class="monthly-h2">23hrs</h2>
+        <h3 class="monthly-h3">Last Week- 29hrs</h3>
+      </section>
+      <section class="study">
+        <div class="study-bg"></div>
+        <div>
+          <h1>Study</h1>
+          <img src="images/icon-ellipsis.svg" alt="icon-ellipsis" />
+        </div>
+        <h2 class="daily-h2">0hrs</h2>
+        <h3 class="daily-h3">Last Week- 1hr</h3>
+        <h2 class="weekly-h2">4hrs</h2>
+        <h3 class="weekly-h3">Last Week- 7hrs</h3>
+        <h2 class="monthly-h2">13hrs</h2>
+        <h3 class="monthly-h3">Last Week- 19hrs</h3>
+      </section>
+      <section class="exercise">
+        <div class="exercise-bg"></div>
+        <div>
+          <h1>Exercise</h1>
+          <img src="images/icon-ellipsis.svg" alt="icon-ellipsis" />
+        </div>
+        <h2 class="daily-h2">1hr</h2>
+        <h3 class="daily-h3">Last Week- 1hr</h3>
+        <h2 class="weekly-h2">4hrs</h2>
+        <h3 class="weekly-h3">Last Week- 5hrs</h3>
+        <h2 class="monthly-h2">11hrs</h2>
+        <h3 class="monthly-h3">Last Week- 18hrs</h3>
+      </section>
+      <section class="social">
+        <div class="social-bg"></div>
+        <div>
+          <h1>Social</h1>
+          <img src="images/icon-ellipsis.svg" alt="icon-ellipsis" />
+        </div>
+        <h2 class="daily-h2">1hr</h2>
+        <h3 class="daily-h3">Last Week- 3hrs</h3>
+        <h2 class="weekly-h2">5hrs</h2>
+        <h3 class="weekly-h3">Last Week- 10hrs</h3>
+        <h2 class="monthly-h2">21hrs</h2>
+        <h3 class="monthly-h3">Last Week- 23hrs</h3>
+      </section>
+      <section class="selfcare">
+        <div class="selfcare-bg"></div>
+        <div>
+          <h1>Self Care</h1>
+          <img src="images/icon-ellipsis.svg" alt="icon-ellipsis" />
+        </div>
+        <h2 class="daily-h2">0hrs</h2>
+        <h3 class="daily-h3">Last Week- 1hr</h3>
+        <h2 class="weekly-h2">2hrs</h2>
+        <h3 class="weekly-h3">Last Week- 2hrs</h3>
+        <h2 class="monthly-h2">7hrs</h2>
+        <h3 class="monthly-h3">Last Week- 11hrs</h3>
+      </section>
+    </main>
+  </body>
+  <script>
+    function dailytoggle() {
+      var element = document.body;
+      element.classList.toggle("daily");
+      element.classList.remove ("weekly", "monthly")
+     
+    }
+    function weeklytoggle() {
+      var element = document.body;
+      element.classList.toggle("weekly");
+      element.classList.remove ("daily", "monthly")
+    
+    }
+    function monthlytoggle() {
+      var element = document.body;
+      element.classList.toggle("monthly");
+      element.classList.remove("weekly", "daily")
+ 
+    }
+  </script>
+</html>
